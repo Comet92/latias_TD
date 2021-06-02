@@ -28,4 +28,7 @@ int main(){
 	sumTab(t1, t2, t3, n);
 	printf("La somme des deux tableaux est donc:\n");
 	print_tableau(t3, n);
+	char mot[] = "Salut";
+	int l = mylen(mot);
+	printf("La taille de la chaine est: %d\n", l);
 }
