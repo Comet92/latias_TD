@@ -9,10 +9,14 @@
 
 
 int main(){
-	int tableau [] = {61, 52, 33};
+	int t1 [] = {61, 52, 33};
+	int t2 [] = {33, 52, 61};
 	int n = 3;
+	int t3 [] = {0, 0, 0};
 	printf("Le résultat du premier tableau est :\n");
-	print_tableau (tableau, n);
+	print_tableau (t1, n);
+        printf("Le résultat du second tableau est :\n");
+        print_tableau (t2, n);
 	int pairTab[50];
 	int compteur = 0;
 	for (int i = 0; i<50; ++i) {
@@ -21,4 +25,7 @@ int main(){
 	}
 	printf("Le tableau des nombres pairs entre 0 et 100 est:\n");
 	print_tableau (pairTab, 50);
+	sumTab(t1, t2, t3, n);
+	printf("La somme des deux tableaux est donc:\n");
+	print_tableau(t3, n);
 }
