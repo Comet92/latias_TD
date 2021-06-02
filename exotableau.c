@@ -19,3 +19,11 @@ void sumTab(int t1[], int t2[],int t[], int n){
 			}
 	}
 
+int mylen(char s[]){
+	int compteur = 0;
+	while (s[compteur] != '\0'){
+		compteur++;
+		}
+	return compteur;
+	}
+
